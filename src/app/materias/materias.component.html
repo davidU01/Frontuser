@@ -1,0 +1,27 @@
+<div>
+    <button type="button" class="btn btn-dark">
+        <a class="botonInscribir" href="/crearMateria">Crear Materia</a>
+    </button>
+    <button type="button" class="btn btn-success">
+        <a class="botonInscribir" href="">Eliminar Materia</a>
+    </button>
+</div>
+<table class="table table-responsive table-hover table-bordered ">
+    <thead class="tablehead" style="background-color: #BABFC9;" >
+        <tr>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Creditos</th>
+            <th>Cupos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let materia of ListarMateria">
+            <td>{{materia.subject_code}}</td>
+            <td>{{materia.subject_name}}</td>
+            <td>{{materia.credits}}</td>
+            <td>{{materia.subject_seats}}</td>
+        </tr>
+    </tbody>
+</table>
+<router-outlet></router-outlet>

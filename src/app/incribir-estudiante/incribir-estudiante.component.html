@@ -1,0 +1,30 @@
+<body>
+    <table class="table table-responsive table-hover table-bordered ">
+        <thead class="tablehead" style="background-color: #BABFC9;" >
+            <tr>
+                <th>Nombre</th>
+                <th>Tipo de Documento</th>
+                <th>Número de Documento</th>
+                <th>Nombre Departamento</th>
+                <th>fecha fin contrato</th>
+                <th>Cargo</th>
+                <th>Email</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let estudiante of ListarEstudiante">
+                <td>{{estudiante.nombre_completo}}</td>
+                <td>{{estudiante.tipo_documento}}</td>
+                <td>{{estudiante.numero_documento}}</td>
+                <!-- <td>{{estudiante.document_number}}</td> -->
+                <td>{{estudiante.nombre_departamento}}</td>
+                <td>{{estudiante.fecha_fin_contrato}}</td>
+                <td>{{estudiante.cargo}}</td>
+                <td>{{estudiante.email}}</td>
+                <td>{{estudiante.estado}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<router-outlet></router-outlet>

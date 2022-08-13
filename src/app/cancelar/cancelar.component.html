@@ -1,0 +1,23 @@
+<table class="table table-responsive table-hover table-bordered ">
+    <thead class="tablehead" style="background-color: #BABFC9;" >
+        <tr>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Creditos</th>
+            <th>Cupos</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let materia of ListarMateria">
+            <td>{{materia.subject_code}}</td>
+            <td>{{materia.subject_name}}</td>
+            <td>{{materia.credits}}</td>
+            <td>{{materia.subject_seats}}</td>
+            <td>
+                <button  type="button" class="btn btn-danger">Cancelar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<router-outlet></router-outlet>
